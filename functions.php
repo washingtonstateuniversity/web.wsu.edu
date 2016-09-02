@@ -37,7 +37,19 @@ class WSU_Web_Communication_Theme {
 	 * @since 0.0.1
 	 */
 	public function setup_hooks() {
+		add_filter( 'spine_child_theme_version', array( $this, 'theme_version' ) );
 		add_shortcode( 'wsuwp_plugin_list', array( $this, 'display_plugin_list' ) );
+	}
+
+	/**
+	 * Provide a theme version for use in cache busting.
+	 *
+	 * @since 0.0.1
+	 *
+	 * @return string
+	 */
+	public function theme_version() {
+		return $this->script_version;
 	}
 
 	/**
