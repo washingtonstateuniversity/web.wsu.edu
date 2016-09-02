@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<ruleset name="web.wsu.edu">
+    <description>Sniffs for the coding standards for the web.wsu.edu child theme</description>
+
+    <rule ref="WordPress-Extra">
+        <exclude name="WordPress.NamingConventions.ValidFunctionName" />
+        <exclude name="WordPress.Files.FileName" />
+        <exclude name="WordPress.XSS.EscapeOutput" />
+        <exclude name="Generic.Formatting.DisallowMultipleStatements" />
+        <exclude name="WordPress.PHP.StrictComparisons" />
+        <exclude name="WordPress.WP.EnqueuedResources" />
+    </rule>
+</ruleset>

@@ -1,0 +1,148 @@
+/*
+ Theme Name:     WSU Web Communication Theme
+ Theme URI:      https://web.wsu.edu
+ Description:    A child theme for web.wsu.edu
+ Author:         WSU University Communications
+ Author URI:     https://web.wsu.edu
+ Template:       spine
+ Version:        0.0.1
+*/
+
+#glue {
+    min-height: 100%;
+}
+
+/* Post 310 Sample styles */
+.single.has-featured-image .main-header {
+    background-color: #981e32;
+    color: white;
+}
+
+.single.has-featured-image .main-header a {
+    color: white;
+}
+
+.postid-310.five1.sampled .featured-image {
+    background-image: url('/wp-content/uploads/sites/7/2015/06/random1.jpg') !important;
+}
+
+.postid-310.five2.sampled .featured-image {
+    background-image: url('/wp-content/uploads/sites/7/2015/06/random.jpg') !important;
+}
+
+.postid-310.five3 .featured-image {
+    background-image: url('/wp-content/uploads/sites/7/2015/06/random3.jpg') !important;
+}
+
+.postid-310.five4.sampled .featured-image {
+    background-image: url('/wp-content/uploads/sites/7/2015/06/random4.jpg') !important;
+}
+
+.postid-310.five5.sampled .featured-image {
+    background-image: url('/wp-content/uploads/sites/7/2015/06/random5.jpg') !important;
+}
+
+#jacket {
+    background-color: #fff;
+}
+
+body {
+    background-color: #fff;
+}
+
+.main-header {
+    background-color: #fff;
+    border-top: solid 4px #981e32;
+    height: 80px;
+}
+
+.sup-header-default {
+    color: #981e32;
+}
+
+h1 {
+    font-size: 2.3rem;
+    color: #23282B;
+    font-weight: 400;
+    padding: .5em 0;
+}
+
+h2 {
+    color: #444;
+    font-weight: 500;
+    padding: 0 0 1rem;
+}
+
+.column > code {
+    display: block;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+.wsuwp-people-wrapper,
+.wsuwp-content-syndicate-wrapper {
+    background: #ececec;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.wsuwp-people-wrapper {
+    padding: 1rem 0 1rem 1rem;
+}
+
+.post {
+    margin-bottom: 25px;
+}
+
+article footer {
+    border: 1px rgba(127,127,127,0.2) solid;
+    border-right: none;
+    border-left: none;
+    font-size: .75em;
+    margin: 5px 0;
+    padding: 5px;
+}
+
+article footer a, article header cite a {
+    text-decoration: underline;
+}
+
+.main-header sup {
+    font-size: 1.3em;
+}
+
+.main-header sup, .main-header sub {
+    color: #5e6a71;
+}
+
+.main-header sup a {
+    color: #981e32;
+}
+
+.main-header sup a:hover {
+    color: #5e6a71;
+}
+
+footer.main-footer {
+    padding: 0 2em;
+}
+
+.main-header sub {
+    display: none;
+}
+
+.article-header hgroup.source, .article-header .hgroup.source {
+    padding: 0 0 15px;
+}
+
+/* Used as an example in plugin documentation */
+#wsu-video-background {
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+/* Bottom padding for pagebuilder pages - Phil 3/3/16 */
+main > div {
+    padding-bottom: 4rem;
+}
+/*# sourceMappingURL=style.css.map */
