@@ -135,3 +135,35 @@ footer.main-footer {
 main > div {
     padding-bottom: 4rem;
 }
+
+/** Style the plugin list on web.wsu.edu/guide/ */
+.wsuwp-plugin-single {
+    position: relative;
+    background: #fff;
+    padding: 1rem;
+}
+
+.wsuwp-plugin-global {
+    background: #e3dfcd;
+}
+
+.wsuwp-plugin-list h3 {
+    font-size: 1.4rem;
+    color: #444;
+    font-weight: 400;
+}
+
+.wsuwp-plugin-version, .wsuwp-plugin-url {
+    margin: 0.25rem 0 0 0;
+}
+
+.wsuwp-plugin-description {
+    margin: 0.5rem 0 0 0;
+}
+
+.wsuwp-plugin-list-controls div {
+    display: inline-block;
+    padding: 1rem;
+    color: #00a5bd;
+    cursor: pointer;
+}
