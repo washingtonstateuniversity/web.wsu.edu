@@ -177,4 +177,8 @@ main > div {
     color: #00a5bd;
     cursor: pointer;
 }
+
+.attribution-text p {
+    font-style: italic;
+}
 /*# sourceMappingURL=style.css.map */

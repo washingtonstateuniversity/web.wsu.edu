@@ -167,3 +167,7 @@ main > div {
     color: #00a5bd;
     cursor: pointer;
 }
+
+.attribution-text {
+    font-style: italic;
+}
