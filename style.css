@@ -234,8 +234,7 @@ hr {
 	margin: 3em 0;
 }
 
-/* headers lead off content, don't want top padding on H elements
-	 within headers */
+/* Remove padding on H elements leadign off content. */
 main header h2,
 main header h3,
 main header h4,
