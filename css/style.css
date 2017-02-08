@@ -38,6 +38,7 @@
 
 body {
     background-color: #fff;
+    color: #2d2d2d;
 }
 
 .main-header {
@@ -61,6 +62,22 @@ h2 {
     color: #444;
     font-weight: 500;
     padding: 0 0 1rem;
+}
+
+/* anchors need to be more visible */
+main a {
+    padding-bottom: 1px;
+    border-bottom: 1px solid rgba(64,64,64,.2);
+    transition: all .3s ease;
+}
+
+main a:hover {
+    border-color: #981e32;
+}
+
+.main-header a,
+main h2 a {
+    border: none;
 }
 
 .column > code {
@@ -91,10 +108,6 @@ article footer {
     font-size: .75em;
     margin: 5px 0;
     padding: 5px;
-}
-
-article footer a, article header cite a {
-    text-decoration: underline;
 }
 
 .main-header sup {
@@ -136,38 +149,185 @@ main > div {
     padding-bottom: 4rem;
 }
 
-/** Style the plugin list on web.wsu.edu/guide/ */
-.wsuwp-plugin-single {
-    position: relative;
-    background: #fff;
-    padding: 1rem;
+/* --- type shared with web guides, borrowed from medicine.wsu.edu --- */
+/* --- type from medicine.wsu.edu --- */
+main {
+    font-size: 16px;
+    color: #2d2d2d;
 }
 
-.wsuwp-plugin-global {
-    background: #e3dfcd;
+h1 {
+    font-size: 3em;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: .5em 0 1.5em;
 }
 
-.wsuwp-plugin-list h3 {
-    font-size: 1.4rem;
-    color: #444;
+.single-post h1 {
+    margin-top: 1em;
+}
+
+h2 {
+    color: #981e32;
+    font-size: 2.5em;
     font-weight: 400;
+    line-height: 1.3;
+    margin: 1em 0 .5em;
 }
 
-.wsuwp-plugin-version, .wsuwp-plugin-url {
-    margin: 0.25rem 0 0 0;
+h3 {
+    font-size: 1.5em;
+    font-weight: 700;
+    line-height: 1.6;
+    padding: .5em 0 .6em;
+    text-transform: uppercase;
 }
 
-.wsuwp-plugin-description {
-    margin: 0.5rem 0 0 0;
+h4 {
+    color: #a31d36;
+    font-size: 1em;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 1em;
+    padding: .7em 0;
 }
 
-.wsuwp-plugin-list-controls div {
-    display: inline-block;
-    padding: 1rem;
-    color: #00a5bd;
-    cursor: pointer;
+h5 {
+    font-size: .9em;
+    font-weight: 400;
+    margin: 1em 0 0;
+    padding: .7em 0;
+    text-transform: uppercase;
 }
 
-.attribution-text {
+h6 {
+    font-size: .85em;
+    font-weight: 600;
+    padding: .5em 0;
+    margin: 1em 0 0;
+}
+
+p {
+    padding-bottom: 1.5em;
+}
+
+strong {
+    font-weight: 600;
+}
+
+hr {
+    background-color: rgba(93,105,112,.1);
+    margin: 3em 0;
+}
+
+/* headers lead off content, don't want top padding on H elements
+	 within headers */
+main header h2,
+main header h3,
+main header h4,
+main header h5 {
+    padding-top: 0;
+}
+
+blockquote,
+cite,
+main li,
+p {
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.75;
+}
+
+.explain {
+    padding-left: 2em;
+}
+
+main figure {
+    margin: 1em 0;
+}
+
+main figcaption {
+    color: rgba(0,0,0,.6);
+    font-size: .75em;
+    line-height: 1.3;
+    margin-bottom: 2em;
+    padding: 0 1em;
+    text-align: right;
+}
+
+main li li {
+    font-size: 1em;
+    /* keep nested li the same size as parent */
+}
+
+main ol li,
+main ul li {
+    padding: 0 0 .5em;
+}
+
+/* buttons */
+.button,
+.button:hover {
+    background: #fff;
+    border: 1px solid #2d2d2d;
+    border-radius: 0;
+    color: #3b4042;
+    font-weight: 300;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 2em;
+    padding: 1.05em 5em 1em;
+    vertical-align: middle;
+    transition: all .3s ease;
+}
+
+.button:hover {
+    background: #981e32;
+    border-color: #981e32;
+    color: #fff;
+}
+
+/* Guides */
+.green {
+    color: #cbc4a2;
+}
+
+.na,
+.dk-green {
+    color: #8f7e35;
+}
+
+.lt-highlight {
+    background: #b5babe;
+    color: #fff;
+}
+
+.dk-highlight {
+    background: #464e54;
+    color: #fff;
+}
+
+.s,
+.red {
+    color: #c60c30;
+}
+
+.nc {
+    color: #2f5055;
+}
+
+.attribution-text p {
     font-style: italic;
+}
+
+pre code {
+    overflow: auto;
+    display: block;
+    padding: .7em;
+    background: #eff0f1;
+    font-size: 85%;
+}
+
+code {
+    font-size: 85%;
 }
