@@ -1,173 +1,314 @@
 #glue {
-    min-height: 100%;
+	min-height: 100%;
 }
 
 /* Post 310 Sample styles */
 .single.has-featured-image .main-header {
-    background-color: #981e32;
-    color: white;
+	background-color: #981e32;
+	color: #fff;
 }
 
 .single.has-featured-image .main-header a {
-    color: white;
-}
-
-.postid-310.five1.sampled .featured-image {
-    background-image: url('/wp-content/uploads/sites/7/2015/06/random1.jpg') !important;
-}
-
-.postid-310.five2.sampled .featured-image {
-    background-image: url('/wp-content/uploads/sites/7/2015/06/random.jpg') !important;
-}
-
-.postid-310.five3 .featured-image {
-    background-image: url('/wp-content/uploads/sites/7/2015/06/random3.jpg') !important;
-}
-
-.postid-310.five4.sampled .featured-image {
-    background-image: url('/wp-content/uploads/sites/7/2015/06/random4.jpg') !important;
-}
-
-.postid-310.five5.sampled .featured-image {
-    background-image: url('/wp-content/uploads/sites/7/2015/06/random5.jpg') !important;
+	color: #fff;
 }
 
 #jacket {
-    background-color: #fff;
+	background-color: #fff;
 }
 
 body {
-    background-color: #fff;
+	background-color: #fff;
+	color: #2d2d2d;
 }
 
 .main-header {
-    background-color: #fff;
-    border-top: solid 4px #981e32;
-    height: 80px;
+	background-color: #fff;
+	border-top: solid 4px #981e32;
+	height: 80px;
 }
 
 .sup-header-default {
-    color: #981e32;
+	color: #981e32;
 }
 
 h1 {
-    font-size: 2.3rem;
-    color: #23282B;
-    font-weight: 400;
-    padding: .5em 0;
+	font-size: 2.3rem;
+	color: #23282b;
+	font-weight: 400;
+	padding: .5em 0;
 }
 
 h2 {
-    color: #444;
-    font-weight: 500;
-    padding: 0 0 1rem;
+	color: #444;
+	font-weight: 500;
+	padding: 0 0 1rem;
+}
+
+/* anchors need to be more visible */
+main a {
+	padding-bottom: 1px;
+	border-bottom: 1px solid rgba(64, 64, 64, .2);
+	transition: all .3s ease;
+}
+
+main a:hover {
+	border-color: #981e32;
+}
+
+.main-header a,
+main h2 a {
+	border: none;
 }
 
 .column > code {
-    display: block;
-    margin-bottom: 1rem;
-    margin-left: 1rem;
+	display: block;
+	margin-bottom: 1rem;
+	margin-left: 1rem;
 }
 
 .wsuwp-people-wrapper,
 .wsuwp-content-syndicate-wrapper {
-    background: #ececec;
-    padding-top: 1rem;
-    margin-bottom: 1rem;
+	background: #ececec;
+	padding-top: 1rem;
+	margin-bottom: 1rem;
 }
 
 .wsuwp-people-wrapper {
-    padding: 1rem 0 1rem 1rem;
+	padding: 1rem 0 1rem 1rem;
 }
 
 .post {
-    margin-bottom: 25px;
+	margin-bottom: 25px;
 }
 
 article footer {
-    border: 1px rgba(127,127,127,0.2) solid;
-    border-right: none;
-    border-left: none;
-    font-size: .75em;
-    margin: 5px 0;
-    padding: 5px;
-}
-
-article footer a, article header cite a {
-    text-decoration: underline;
+	border: 1px rgba(127, 127, 127, .2) solid;
+	border-right: none;
+	border-left: none;
+	font-size: .75em;
+	margin: 5px 0;
+	padding: 5px;
 }
 
 .main-header sup {
-    font-size: 1.3em;
+	font-size: 1.3em;
 }
 
-.main-header sup, .main-header sub {
-    color: #5e6a71;
+.main-header sup,
+.main-header sub {
+	color: #5e6a71;
 }
 
 .main-header sup a {
-    color: #981e32;
+	color: #981e32;
 }
 
 .main-header sup a:hover {
-    color: #5e6a71;
+	color: #5e6a71;
 }
 
 footer.main-footer {
-    padding: 0 2em;
+	padding: 0 2em;
 }
 
 .main-header sub {
-    display: none;
+	display: none;
 }
 
-.article-header hgroup.source, .article-header .hgroup.source {
-    padding: 0 0 15px;
+.article-header hgroup.source,
+.article-header .hgroup.source {
+	padding: 0 0 15px;
 }
 
 /* Used as an example in plugin documentation */
 #wsu-video-background {
-    height: 300px;
-    margin-bottom: 20px;
+	height: 300px;
+	margin-bottom: 20px;
 }
 
 /* Bottom padding for pagebuilder pages - Phil 3/3/16 */
 main > div {
-    padding-bottom: 4rem;
+	padding-bottom: 4rem;
 }
 
-/** Style the plugin list on web.wsu.edu/guide/ */
-.wsuwp-plugin-single {
-    position: relative;
-    background: #fff;
-    padding: 1rem;
+/* --- type shared with web guides, borrowed from medicine.wsu.edu --- */
+
+/* --- type from medicine.wsu.edu --- */
+main {
+	font-size: 16px;
+	color: #2d2d2d;
 }
 
-.wsuwp-plugin-global {
-    background: #e3dfcd;
+h1 {
+	font-size: 3em;
+	font-weight: 300;
+	text-transform: uppercase;
+	margin: .5em 0 1.5em;
 }
 
-.wsuwp-plugin-list h3 {
-    font-size: 1.4rem;
-    color: #444;
-    font-weight: 400;
+.single-post h1 {
+	margin-top: 1em;
 }
 
-.wsuwp-plugin-version, .wsuwp-plugin-url {
-    margin: 0.25rem 0 0 0;
+h2 {
+	color: #981e32;
+	font-size: 2.5em;
+	font-weight: 400;
+	line-height: 1.3;
+	margin: 1em 0 .5em;
 }
 
-.wsuwp-plugin-description {
-    margin: 0.5rem 0 0 0;
+h3 {
+	font-size: 1.5em;
+	font-weight: 700;
+	line-height: 1.6;
+	padding: .5em 0 .6em;
+	text-transform: uppercase;
 }
 
-.wsuwp-plugin-list-controls div {
-    display: inline-block;
-    padding: 1rem;
-    color: #00a5bd;
-    cursor: pointer;
+h4 {
+	color: #a31d36;
+	font-size: 1em;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin-top: 1em;
+	padding: .7em 0;
 }
 
-.attribution-text {
-    font-style: italic;
+h5 {
+	font-size: .9em;
+	font-weight: 400;
+	margin: 1em 0 0;
+	padding: .7em 0;
+	text-transform: uppercase;
+}
+
+h6 {
+	font-size: .85em;
+	font-weight: 600;
+	padding: .5em 0;
+	margin: 1em 0 0;
+}
+
+p {
+	padding-bottom: 1.5em;
+}
+
+strong {
+	font-weight: 600;
+}
+
+hr {
+	background-color: rgba(93, 105, 112, .1);
+	margin: 3em 0;
+}
+
+/* Remove padding on H elements leadign off content. */
+main header h2,
+main header h3,
+main header h4,
+main header h5 {
+	padding-top: 0;
+}
+
+blockquote,
+cite,
+main li,
+p {
+	font-size: 1.1em;
+	font-weight: 300;
+	line-height: 1.75;
+}
+
+.explain {
+	padding-left: 2em;
+}
+
+main figure {
+	margin: 1em 0;
+}
+
+main figcaption {
+	color: rgba(0, 0, 0, .6);
+	font-size: .75em;
+	line-height: 1.3;
+	margin-bottom: 2em;
+	padding: 0 1em;
+	text-align: right;
+}
+
+main li li {
+	font-size: 1em;
+}
+
+main ol li,
+main ul li {
+	padding: 0 0 .5em;
+}
+
+/* buttons */
+.button,
+.button:hover {
+	background: #fff;
+	border: 1px solid #2d2d2d;
+	border-radius: 0;
+	color: #3b4042;
+	font-weight: 300;
+	text-decoration: none;
+	text-transform: uppercase;
+	margin-top: 2em;
+	padding: 1.05em 5em 1em;
+	vertical-align: middle;
+	transition: all .3s ease;
+}
+
+.button:hover {
+	background: #981e32;
+	border-color: #981e32;
+	color: #fff;
+}
+
+/* Guides */
+.green {
+	color: #cbc4a2;
+}
+
+.na,
+.dk-green {
+	color: #8f7e35;
+}
+
+.lt-highlight {
+	background: #b5babe;
+	color: #fff;
+}
+
+.dk-highlight {
+	background: #464e54;
+	color: #fff;
+}
+
+.s,
+.red {
+	color: #c60c30;
+}
+
+.nc {
+	color: #2f5055;
+}
+
+.attribution-text p {
+	font-style: italic;
+}
+
+pre code {
+	overflow: auto;
+	display: block;
+	padding: .7em;
+	background: #eff0f1;
+	font-size: 85%;
+}
+
+code {
+	font-size: 85%;
 }
