@@ -324,4 +324,8 @@ pre code {
 code {
 	font-size: 85%;
 }
+
+.html-component-embed pre {
+	border: 1px solid #eee;
+}
 /*# sourceMappingURL=style.css.map */
