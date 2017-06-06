@@ -100,6 +100,11 @@ class WSU_Web_Communication_Theme {
 		if ( 0 === strpos( $url,'https://raw.githubusercontent.com/washingtonstateuniversity/WSU-Web-Framework', 0 ) ) {
 			return true;
 		}
+
+		if ( 0 === strpos( $url, 'https://raw.githubusercontent.com/washingtonstateuniversity/web.wsu.edu', 0 ) ) {
+			return true;
+		}
+
 		return $allowed;
 	}
 }
