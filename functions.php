@@ -39,6 +39,7 @@ class WSU_Web_Communication_Theme {
 	public function setup_hooks() {
 		add_filter( 'spine_child_theme_version', array( $this, 'theme_version' ) );
 		add_shortcode( 'wsuwp_plugin_list', array( $this, 'display_plugin_list' ) );
+		add_filter( 'allowed_html_component_url', array( $this, 'allowed_html_component_url' ), 10, 2 );
 	}
 
 	/**
@@ -87,6 +88,20 @@ class WSU_Web_Communication_Theme {
 		return $plugin_list;
 	}
 
+	/**
+	 * Determine if a URL used in the [html_component] shortcode is allowed.
+	 *
+	 * @param bool   $allowed
+	 * @param string $url
+	 *
+	 * @return bool
+	 */
+	public function allowed_html_component_url( $allowed, $url ) {
+		if ( 0 === strpos( $url,'https://raw.githubusercontent.com/washingtonstateuniversity/WSU-Web-Framework', 0 ) ) {
+			return true;
+		}
+		return $allowed;
+	}
 }
 
 add_action( 'after_setup_theme', 'WSU_Web_Communication_Theme' );
