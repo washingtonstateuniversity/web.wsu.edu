@@ -26,6 +26,7 @@ before_script:
   - npm install
   - npm --version
   - node --version
+  - phpenv config-rm xdebug.ini
   - composer install
 
 script:
