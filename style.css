@@ -58,7 +58,6 @@ h2 {
 main a {
 	padding-bottom: 1px;
 	border-bottom: 1px solid rgba(64, 64, 64, .2);
-	-webkit-transition: all .3s ease;
 	transition: all .3s ease;
 }
 
@@ -270,7 +269,6 @@ main ul li {
 	margin-top: 2em;
 	padding: 1.05em 5em 1em;
 	vertical-align: middle;
-	-webkit-transition: all .3s ease;
 	transition: all .3s ease;
 }
 
