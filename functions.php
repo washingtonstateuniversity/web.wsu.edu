@@ -6,7 +6,7 @@ class WSU_Web_Communication_Theme {
 	 *
 	 * @var string String used for busting cache on scripts.
 	 */
-	var $script_version = '0.0.2';
+	public $script_version = '0.0.2';
 
 	/**
 	 * @since 0.0.1
@@ -65,7 +65,7 @@ class WSU_Web_Communication_Theme {
 
 		$plugins = get_plugins();
 
-		$plugin_list = '<div class="wsuwp-plugin-list-controls"><div class="toggle-plugin-global">Hide globally active plugins</div><div class="toggle-plugin-single">Hide non-globally active plugins</div></div>';
+		$plugin_list  = '<div class="wsuwp-plugin-list-controls"><div class="toggle-plugin-global">Hide globally active plugins</div><div class="toggle-plugin-single">Hide non-globally active plugins</div></div>';
 		$plugin_list .= '<div class="wsuwp-plugin-list">';
 
 		foreach ( $plugins as $plugin => $properties ) {
@@ -97,7 +97,7 @@ class WSU_Web_Communication_Theme {
 	 * @return bool
 	 */
 	public function allowed_html_component_url( $allowed, $url ) {
-		if ( 0 === strpos( $url,'https://raw.githubusercontent.com/washingtonstateuniversity/WSU-Web-Framework', 0 ) ) {
+		if ( 0 === strpos( $url, 'https://raw.githubusercontent.com/washingtonstateuniversity/WSU-Web-Framework', 0 ) ) {
 			return true;
 		}
 
