@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js no-svg lt-ie9 lt-ie8 lt-ie7" lang="en-US"> <![endif]-->
+<!--[if IE 7]><html class="no-js no-svg lt-ie9 lang="en-US"> <![endif]-->
+<!--[if IE 8]><html class="no-js no-svg lt-ie9" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en-US"><!--<![endif]-->
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+	<meta charset="UTF-8" />
+	<title>Web Communication | Washington State University</title>
+
+	<!-- FAVICON -->
+	<link rel="shortcut icon" href="https://repo.wsu.edu/spine/1/favicon.ico" />
+
+	<!-- RESPOND -->
+	<meta name="viewport" content="width=device-width, user-scalable=yes">
+
+	<!-- DOCS -->
+	<link type="text/plain" rel="author" href="https://repo.wsu.edu/spine/1/authors.txt" />
+	<link type="text/html" rel="help" href="https://brand.wsu.edu/media/web" />
+
+	<!-- SCRIPTS and STYLES -->
+	<!-- Custom scripts and styles should be added with wp_enqueue_script() and wp_enqueue_style() -->
+
+	<link rel='dns-prefetch' href='//ajax.googleapis.com' />
+	<link rel='dns-prefetch' href='//repo.wsu.edu' />
+	<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+	<link rel='dns-prefetch' href='//s.w.org' />
+	<script type="text/javascript">
+		window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/web.wsu.edu\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.1"}};
+		!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56794,8205,9794,65039],[55358,56794,8203,9794,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+	</script>
+	<style type="text/css">
+		img.wp-smiley,
+		img.emoji {
+			display: inline !important;
+			border: none !important;
+			box-shadow: none !important;
+			height: 1em !important;
+			width: 1em !important;
+			margin: 0 .07em !important;
+			vertical-align: -0.1em !important;
+			background: none !important;
+			padding: 0 !important;
+		}
+	</style>
+	<link rel='stylesheet' id='wp-blocks-css'  href='https://web.wsu.edu/wp-content/plugins/gutenberg/blocks/build/style.css?ver=1515799263' type='text/css' media='all' />
+	<link rel='stylesheet' id='tablepress-default-css'  href='https://web.wsu.edu/wp-content/plugins/tablepress/css/default.min.css?ver=1.9' type='text/css' media='all' />
+	<link rel='stylesheet' id='wsu-spine-css'  href='https://repo.wsu.edu/spine/1/spine.min.css?ver=0.27.16-1.7.0-42329-p1' type='text/css' media='all' />
+	<link rel='stylesheet' id='spine-theme-css'  href='https://web.wsu.edu/wp-content/themes/spine/style.css?ver=0.27.16-1.7.0-42329-p1' type='text/css' media='all' />
+
+	<link rel='stylesheet' id='spine-theme-child-css'  href='../style.css?ver=0.0.2' type='text/css' media='all' />
+
+	<link rel='stylesheet' id='spine-theme-print-css'  href='https://web.wsu.edu/wp-content/themes/spine/css/print.css?ver=0.27.16-1.7.0-42329-p1' type='text/css' media='print' />
+	<link rel='stylesheet' id='spine-custom-css-css'  href='https://web.wsu.edu/?custom-css=1&#038;csblog=7&#038;cscache=6&#038;csrev=80&#038;ver=0.27.16-1.7.0-42329-p1' type='text/css' media='all' />
+	<link rel='stylesheet' id='open-sans-css'  href='//fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C400italic%2C700%2C700italic&#038;subset=latin%2Clatin-ext&#038;ver=4.9.1' type='text/css' media='all' />
+
+	<script type='text/javascript' src='https://web.wsu.edu/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+	<script type='text/javascript' src='https://web.wsu.edu/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+	<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js?ver=4.9.1'></script>
+	<script type='text/javascript'>
+		/* <![CDATA[ */
+		var spineoptions = {"social":{"share_text":"Web Communication | Washington State University","twitter_text":"Web Communication","twitter_handle":"wsupullman"}};
+		/* ]]> */
+	</script>
+	<script type='text/javascript' src='https://repo.wsu.edu/spine/1/spine.min.js?ver=0.27.16-1.7.0-42329-p1'></script>
+	<link rel='https://api.w.org/' href='https://web.wsu.edu/wp-json/' />
+	<meta name="generator" content="WordPress 4.9.1" />
+	<style type="text/css" id="syntaxhighlighteranchor"></style>
+	<meta name="google-site-verification" content="94U_-8wG9HrJo-m1D04UAdRUwhtfCG5_ogE8QD1-oIw">
+
+	<!-- COMPATIBILITY -->
+	<!--[if lt IE 9]><script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<noscript><style>#spine #spine-sitenav ul ul li { display: block !important; }</style></noscript>
+</head>
+
+<body class="home blog domain-web-wsu-edu path-none opensansy not-single five3 ten10 twenty3">
+
+
+<a href="#wsuwp-main" class="screen-reader-shortcut">Skip to main content</a>
+<a href="#spine-sitenav" class="screen-reader-shortcut">Skip to navigation</a>
+
+<div id="jacket" class="style-skeletal colors-gray spacing-default">
+	<div id="binder" class="fluid folio max-1188">
+
+		<main id="wsuwp-main" class="spine-main-index">
+
+			<header class="main-header">
+				<div class="header-group hgroup guttered padded-bottom short">
+
+					<sup class="sup-header" data-section="" data-pagetitle="Intro to WordPress – January 2018 Edition" data-posttitle="Intro to WordPress – January 2018 Edition" data-default="Web Communication" data-alternate=""><span class="sup-header-default">Web Communication</span></sup>
+					<sub class="sub-header" data-sitename="Web Communication" data-pagetitle="Intro to WordPress – January 2018 Edition" data-posttitle="Intro to WordPress – January 2018 Edition" data-default="Intro to WordPress – January 2018 Edition" data-alternate=""><span class="sub-header-default">Intro to WordPress – January 2018 Edition</span></sub>
+
+				</div>
+			</header>
+
+			<section class="row side-right gutter pad-ends">
+
+				<div class="column one">
+
+
+					<article id="post-1375" class="post-1375 post type-post status-publish format-standard hentry category-training summary-unabridged">
+
+						<header class="article-header">
+							<hgroup>
+								<h2 class="article-title">
+									<a href="https://web.wsu.edu/2018/01/11/intro-to-wordpress-january-2018-edition/" rel="bookmark">Intro to WordPress – January 2018 Edition</a>
+								</h2>
+							</hgroup>
+							<hgroup class="source">
+								<time class="article-date" datetime="2018-01-11T17:10:12+00:00">January 11, 2018</time>
+								<cite class="article-author">
+									<a href="https://web.wsu.edu/author/clint-young/" title="Posts by Clint Young" rel="author">Clint Young</a>			</cite>
+							</hgroup>
+
+						</header>
+
+						<div class="article-summary">
+							<p>This will be a general introduction training. Whether you are new to WordPress here at WSU or just need a refresher, everyone is welcome to attend.</p>
+							<p>WHEN: Thursday, January 18 @ 3:00 pm – 4:30 pm</p>
+							<p><strong>If you are on the Pullman campus</strong> &#8211; WHERE: ITB 2025 <em>Please come in person.</em></p>
+							<hr />
+							<p><strong>If you are not on Pullman campus</strong> &#8211;</p>
+							<p><a href="https://global.gotomeeting.com/join/245191165">Please join this meeting from your computer, tablet or smartphone.</a></p>
+							<p>You can also dial in using your phone. United States: +1 (872) 240-3212 </p>
+							<p>Access Code: 245-191-165</p>
+						</div><!-- .article-summary -->
+
+						<footer class="article-footer">
+							<dl class="categorized"><dt><span class="categorized-default">Categorized</span></dt><dd><a href="https://web.wsu.edu/category/training/">Training</a></dd></dl>	</footer><!-- .entry-meta -->
+
+					</article>
+
+
+					<article id="post-1348" class="post-1348 post type-post status-publish format-standard hentry category-accessibility category-community category-open-lab category-slack category-training category-workshop summary-unabridged">
+
+						<header class="article-header">
+							<hgroup>
+								<h2 class="article-title">
+									<a href="https://web.wsu.edu/2017/12/21/web-accessibility-update/" rel="bookmark">Web accessibility update</a>
+								</h2>
+							</hgroup>
+							<hgroup class="source">
+								<time class="article-date" datetime="2017-12-21T22:59:43+00:00">December 21, 2017</time>
+								<cite class="article-author">
+									<a href="https://web.wsu.edu/author/slocker/" title="Posts by Stephen Locker" rel="author">Stephen Locker</a>			</cite>
+							</hgroup>
+
+						</header>
+
+						<div class="article-summary">
+
+							<p>Washington State University websites must be accessible to everyone who attends, works at, and enjoys the University. </p>
+
+
+
+							<h2>New policy and procedures govern web accessibility</h2>
+
+
+
+							<p>WSU recently updated its web accessibility policy, Executive Policy #7 (EP7), and added web accessibility procedures. The new policy and procedures strengthen the University’s ability to make its websites accessible to a diverse community. They set standards for WSU electronic and information technology (EIT) that are consistent with state and federal accessibility guidelines, regulations, and laws.</p>
+
+
+
+							<h2>WSU employees must uphold accessibility standards</h2>
+
+
+
+							<p>It is your responsibility to ensure that content that you create or update for WSU is accessible and complies with the revised policy and guidelines.</p>
+
+
+
+							<h2>Required training</h2>
+
+
+
+							<p>Starting in January 2018, WSU will offer web accessibility training online. Registration information will be announced after the first of the year.</p>
+
+
+
+							<h3>Training is mandatory</h3>
+
+
+
+							<p>If you are a web developer, content publisher, editor, domain owner, or have any other role in updating WSU web content, the University requires you to participate in training annually. You must complete training before publishing WSU web content.</p>
+
+
+
+							<h3>Please share this information</h3>
+
+
+
+							<p>If you are not directly involved in your department’s web content development, please forward this message to the appropriate staff.</p>
+
+
+
+							<h2>Support services</h2>
+
+
+
+							<p>The WSU Web Communications staff offers services to help you make your websites accessible. In addition to online training, you can take advantage of monthly workshops, online resources, and in-person support.</p>
+
+
+
+							<h3>Monthly workshops</h3>
+
+
+
+							<p>Strong working knowledge of accessibility issues and requirements is essential for web communicators. These free <a href="https://web.wsu.edu/accessibility/web-accessibility-training-and-support/">monthly workshops</a> keep your knowledge up to date.</p>
+
+
+
+							<blockquote class="wp-block-quote blocks-quote-style-1">
+								<p>JANUARY 2018 WORKSHOP </p>
+								<p><strong>Writing for the web and making content accessible</strong> </p>
+								<p>Thursday, Jan. 4, <br/>3:00–4:00 p.m. </p>
+								<p>Spark Academic Innovation Hub 212 (Pullman) </p>
+								<p>Live-streamed online (all campuses) This workshop introduces best practices for writing accessible web content. Whether you are a full-time web writer or you occasionally update content on your department’s website, you will learn how to create content that is accessible, organized, and succinct.</p>
+								<p><a href="https://wsu.co1.qualtrics.com/jfe/form/SV_787cICt12QpcjYx">Register now </a></p>
+							</blockquote>
+
+
+
+							<h3>WSU web accessibility website</h3>
+
+
+
+							<p>Bookmark this site! The <a href="https://web.wsu.edu/accessibility-guides/">web accessibility site</a> provides resources for content creators, as well as scheduling and registration information for training sessions and workshops.</p>
+
+
+
+							<h3>Web open lab</h3>
+
+
+
+							<p>Fridays, 9:30–11:30 a.m.<br/>ITB 2025, Pullman campus</p>
+
+
+
+							<p>Drop in to exchange ideas and get answers to your questions. Web Communications staff lead these <a href="https://web.wsu.edu/open-lab/">weekly sessions</a>. All are welcome to attend.</p>
+
+
+
+							<h3>Online communication platform </h3>
+
+
+
+							<p>Connect with more than 150 members of the WSU web community on the <a href="https://web.wsu.edu/slack-team/">Slack communication channel</a>. Join conversations, ask questions, and share solutions to accessibility challenges.</p>
+						</div><!-- .article-summary -->
+
+						<footer class="article-footer">
+							<dl class="categorized"><dt><span class="categorized-default">Categorized</span></dt><dd><a href="https://web.wsu.edu/category/accessibility/">Accessibility</a></dd><dd><a href="https://web.wsu.edu/category/community/">Community</a></dd><dd><a href="https://web.wsu.edu/category/open-lab/">Open Lab</a></dd><dd><a href="https://web.wsu.edu/category/slack/">Slack</a></dd><dd><a href="https://web.wsu.edu/category/training/">Training</a></dd><dd><a href="https://web.wsu.edu/category/workshop/">Workshop</a></dd></dl>	</footer><!-- .entry-meta -->
+
+					</article>
+
+
+					<article id="post-1318" class="post-1318 post type-post status-publish format-standard hentry category-accessibility category-training category-workshop summary-unabridged">
+
+						<header class="article-header">
+							<hgroup>
+								<h2 class="article-title">
+									<a href="https://web.wsu.edu/2017/12/19/workshop-writing-for-the-web-and-making-it-accessible/" rel="bookmark">Workshop: Writing for the Web and Making it Accessible</a>
+								</h2>
+							</hgroup>
+							<hgroup class="source">
+								<time class="article-date" datetime="2017-12-19T18:18:49+00:00">December 19, 2017</time>
+								<cite class="article-author">
+									<a href="https://web.wsu.edu/author/wsteele/" title="Posts by Wendy Steele" rel="author">Wendy Steele</a>			</cite>
+							</hgroup>
+
+						</header>
+
+						<div class="article-summary">
+
+							<p>Thursday, Jan. 4, 3 – 4 p.m.</p>
+
+
+
+							<p>Spark Academic Innovation Hub 212 (Pullman) and <a href="https://elearning.wsu.edu/streaming/ucomm.aspx">live-streamed﻿</a> (All Campuses)</p>
+
+
+
+							<p><strong>Writing for the Web and Making it Accessible</strong></p>
+
+
+
+							<p>This workshop provides an introduction to the best practices for writing accessible web content. Whether you are an experienced web writer, or you update content on your department’s website only once a semester, learn what you need to know to ensure that your unit’s websites are accessible, organized, and succinct. In this workshop, you will learn:</p>
+
+
+
+							<ul>
+								<li>How to create descriptive links</li>
+								<li>How to create a clear heading structure</li>
+								<li>Appropriate line length for the web</li>
+								<li>How to write concise and logical text</li>
+								<li>How to convey meaning without using color alone</li>
+								<li>Additional web writing and content organizing tips</li>
+							</ul>
+
+
+
+							<p><strong><a href="https://wsu.co1.qualtrics.com/jfe/form/SV_787cICt12QpcjYx">Please register for the workshop﻿</a></strong><br/></p>
+
+
+
+							<p><a href="https://elearning.wsu.edu/streaming/ucomm.aspx">Access the live-stream on January 4th</a></p>
+						</div><!-- .article-summary -->
+
+						<footer class="article-footer">
+							<dl class="categorized"><dt><span class="categorized-default">Categorized</span></dt><dd><a href="https://web.wsu.edu/category/accessibility/">Accessibility</a></dd><dd><a href="https://web.wsu.edu/category/training/">Training</a></dd><dd><a href="https://web.wsu.edu/category/workshop/">Workshop</a></dd></dl>	</footer><!-- .entry-meta -->
+
+					</article>
+
+
+					<article id="post-1302" class="post-1302 post type-post status-publish format-standard hentry category-training summary-unabridged">
+
+						<header class="article-header">
+							<hgroup>
+								<h2 class="article-title">
+									<a href="https://web.wsu.edu/2017/11/27/intro-to-wordpress-november-2017-edition/" rel="bookmark">Intro to WordPress – November 2017 Edition</a>
+								</h2>
+							</hgroup>
+							<hgroup class="source">
+								<time class="article-date" datetime="2017-11-27T17:54:43+00:00">November 27, 2017</time>
+								<cite class="article-author">
+									<a href="https://web.wsu.edu/author/clint-young/" title="Posts by Clint Young" rel="author">Clint Young</a>			</cite>
+							</hgroup>
+
+						</header>
+
+						<div class="article-summary">
+							<p>This will be a general introduction training. Whether you are new to WordPress here at WSU or just need a refresher, everyone is welcome to attend.</p>
+							<p>WHEN: Thursday, November 30 @ 2:30 pm – 4:00 pm</p>
+							<p><strong>If you are on the Pullman campus</strong> &#8211;<br />
+								WHERE: ITB 2025<br />
+								<em>Please come in person.</em></p>
+							<hr />
+							<p><strong>If you are not on Pullman campus</strong> &#8211;</p>
+							<p>Please join my meeting from your computer, tablet or smartphone.<br />
+								<a href="https://global.gotomeeting.com/join/473145221">https://global.gotomeeting.com/join/473145221 </a></p>
+							<p>You can also dial in using your phone.<br />
+								United States: +1 (571) 317-3122</p>
+							<p>Access Code: 473-145-221</p>
+						</div><!-- .article-summary -->
+
+						<footer class="article-footer">
+							<dl class="categorized"><dt><span class="categorized-default">Categorized</span></dt><dd><a href="https://web.wsu.edu/category/training/">Training</a></dd></dl>	</footer><!-- .entry-meta -->
+
+					</article>
+
+
+					<article id="post-1297" class="post-1297 post type-post status-publish format-standard hentry category-training summary-unabridged">
+
+						<header class="article-header">
+							<hgroup>
+								<h2 class="article-title">
+									<a href="https://web.wsu.edu/2017/10/20/intro-to-wordpress-october-2017-edition/" rel="bookmark">Intro to WordPress – October 2017 Edition</a>
+								</h2>
+							</hgroup>
+							<hgroup class="source">
+								<time class="article-date" datetime="2017-10-20T16:57:08+00:00">October 20, 2017</time>
+								<cite class="article-author">
+									<a href="https://web.wsu.edu/author/clint-young/" title="Posts by Clint Young" rel="author">Clint Young</a>			</cite>
+							</hgroup>
+
+						</header>
+
+						<div class="article-summary">
+							<p>This will be a general introduction training. Whether you are new to WordPress here at WSU or just need a refresher, everyone is welcome to attend.</p>
+							<p>WHEN: Thursday, October 26 @ 2:00 pm – 3:30 pm</p>
+							<p><strong>If you are on the Pullman campus</strong> &#8211;<br />
+								WHERE: ITB 2025<br />
+								<em>Please come in person.</em></p>
+							<hr />
+							<p><strong>If you are not on Pullman campus</strong> &#8211;</p>
+							<p>Please join my meeting from your computer, tablet or smartphone.<br />
+								<a href="https://global.gotomeeting.com/join/610575173">https://global.gotomeeting.com/join/610575173</a></p>
+							<p>You can also dial in using your phone.<br />
+								United States: +1 (872) 240-3412</p>
+							<p>Access Code: 610-575-173</p>
+						</div><!-- .article-summary -->
+
+						<footer class="article-footer">
+							<dl class="categorized"><dt><span class="categorized-default">Categorized</span></dt><dd><a href="https://web.wsu.edu/category/training/">Training</a></dd></dl>	</footer><!-- .entry-meta -->
+
+					</article>
+
+
+					<article id="post-1271" class="post-1271 post type-post status-publish format-standard hentry category-information-architecture category-wsuwp-platform summary-unabridged">
+
+						<header class="article-header">
+							<hgroup>
+								<h2 class="article-title">
+									<a href="https://web.wsu.edu/2017/10/02/a-new-taxonomy-interface/" rel="bookmark">A new taxonomy interface</a>
+								</h2>
+							</hgroup>
+							<hgroup class="source">
+								<time class="article-date" datetime="2017-10-02T16:25:36+00:00">October 2, 2017</time>
+								<cite class="article-author">
+									<a href="https://web.wsu.edu/author/pcable/" title="Posts by Phil Cable" rel="author">Phil Cable</a>			</cite>
+							</hgroup>
+
+						</header>
+
+						<div class="article-summary">
+							<p>In an effort to provide a better experience when managing taxonomy terms for posts, we have consolidated the multiple taxonomy meta boxes into one easy-to-use interface.</p>
+							<p>Rather a complete departure from the default experience, the new interface leverages the <a href="https://select2.org/">Select2</a> library to simplify and enhance it. Each taxonomy is represented by a single input. Clicking or focusing on a given input will provide the complete list of terms for that taxonomy. The terms can also be searched by simply typing in keywords. Both of these features are exemplified below:</p>
+							<figure id="attachment_1273" style="max-width: 317px" class="wp-caption aligncenter"><img class="wp-image-1273 size-full" src="https://s3.wp.wsu.edu/uploads/sites/7/2017/09/taxonomy-all-terms-and-search.gif" alt="An animated screenshot showing an example of the search support." width="317" height="472" /><figcaption class="wp-caption-text">Too many terms to scroll through? Just start typing to search!</figcaption></figure>
+							<p>The process for adding new terms to a taxonomy is largely the same as it was previously. For hierarchical taxonomies like Site Categories, click the &#8220;+ Add New Category&#8221; text and use the small form that pops up to add the new term. For non-hierarchical taxonomies &#8211; like Tags &#8211; simply type in the new term followed by a comma. While it may seem strange that the process is different depending on the taxonomy type, there are technical reasons for the differences (one being that Categories and other hierarchical taxonomy terms can theoretically contain commas). Aside from those reasons, keeping the two different processes seemed to make more sense than introducing something new and unfamiliar.</p>
+							<figure id="attachment_1274" style="max-width: 307px" class="wp-caption aligncenter"><img class="wp-image-1274 size-full" src="https://s3.wp.wsu.edu/uploads/sites/7/2017/09/taxonomy-add-terms.gif" alt="A screenshot showing how to add new terms." width="307" height="331" /><figcaption class="wp-caption-text">Adding new categories or tags will be familiar to those who are used to the old interface.</figcaption></figure>
+							<p>For the developers out there interested in including their custom taxonomies in this interface, or using it on custom post types, the<br />
+								<code>wsuwp_taxonomy_metabox_taxonomies</code><br />
+								and<br />
+								<code>wsuwp_taxonomy_metabox_post_types</code><br />
+								filters, respectively, are provided for doing just that. The use of these filters will be documented soon!</p>
+						</div><!-- .article-summary -->
+
+						<footer class="article-footer">
+							<dl class="categorized"><dt><span class="categorized-default">Categorized</span></dt><dd><a href="https://web.wsu.edu/category/information-architecture/">Information Architecture</a></dd><dd><a href="https://web.wsu.edu/category/wsuwp-platform/">WSUWP Platform</a></dd></dl>	</footer><!-- .entry-meta -->
+
+					</article>
+
+
+					<article id="post-1269" class="post-1269 post type-post status-publish format-standard hentry category-training summary-unabridged">
+
+						<header class="article-header">
+							<hgroup>
+								<h2 class="article-title">
+									<a href="https://web.wsu.edu/2017/09/04/intro-to-wordpress-september-2017-edition/" rel="bookmark">Intro to WordPress – September 2017 Edition</a>
+								</h2>
+							</hgroup>
+							<hgroup class="source">
+								<time class="article-date" datetime="2017-09-04T20:18:31+00:00">September 4, 2017</time>
+								<cite class="article-author">
+									<a href="https://web.wsu.edu/author/clint-young/" title="Posts by Clint Young" rel="author">Clint Young</a>			</cite>
+							</hgroup>
+
+						</header>
+
+						<div class="article-summary">
+							<p>This will be a general introduction training. Whether you are new to WordPress here at WSU or just need a refresher, everyone is welcome to attend.</p>
+							<p>WHEN: Wednesday, September 6 @ 2:30 pm – 4:00 pm</p>
+							<p><strong>If you are on the Pullman campus</strong> &#8211;<br />
+								WHERE: ITB 2025<br />
+								<em>Please come in person.</em></p>
+							<hr />
+							<p><strong>If you are not on Pullman campus</strong> &#8211;</p>
+							<p>Please join my meeting from your computer, tablet or smartphone.<br />
+								<a href="https://global.gotomeeting.com/join/734768389">https://global.gotomeeting.com/join/734768389</a></p>
+							<p>You can also dial in using your phone.<br />
+								United States: +1 (786) 535-3211</p>
+							<p>Access Code: 734-768-389</p>
+						</div><!-- .article-summary -->
+
+						<footer class="article-footer">
+							<dl class="categorized"><dt><span class="categorized-default">Categorized</span></dt><dd><a href="https://web.wsu.edu/category/training/">Training</a></dd></dl>	</footer><!-- .entry-meta -->
+
+					</article>
+
+
+					<article id="post-1253" class="post-1253 post type-post status-publish format-standard hentry category-training summary-unabridged">
+
+						<header class="article-header">
+							<hgroup>
+								<h2 class="article-title">
+									<a href="https://web.wsu.edu/2017/07/26/intro-to-wordpress-july-2017-edition/" rel="bookmark">Intro to WordPress – July 2017 Edition</a>
+								</h2>
+							</hgroup>
+							<hgroup class="source">
+								<time class="article-date" datetime="2017-07-26T23:47:53+00:00">July 26, 2017</time>
+								<cite class="article-author">
+									<a href="https://web.wsu.edu/author/clint-young/" title="Posts by Clint Young" rel="author">Clint Young</a>			</cite>
+							</hgroup>
+
+						</header>
+
+						<div class="article-summary">
+							<p>This will be a general introduction training. Whether you are new to WordPress here at WSU or just need a refresher, everyone is welcome to attend.</p>
+							<p>WHEN: Monday, July 31 @ 2:30 pm – 4:00 pm</p>
+							<p><strong>If you are on the Pullman campus</strong> &#8211;<br />
+								WHERE: ITB 2025<br />
+								<em>Please come in person.</em></p>
+							<hr />
+							<p><strong>If you are not on Pullman campus</strong> &#8211;</p>
+							<p>Please join my meeting from your computer, tablet or smartphone.<br />
+								<a href="https://global.gotomeeting.com/join/237552821">https://global.gotomeeting.com/join/237552821</a></p>
+							<p>You can also dial in using your phone.<br />
+								United States: +1 (571) 317-3112</p>
+							<p>Access Code: 237-552-821</p>
+						</div><!-- .article-summary -->
+
+						<footer class="article-footer">
+							<dl class="categorized"><dt><span class="categorized-default">Categorized</span></dt><dd><a href="https://web.wsu.edu/category/training/">Training</a></dd></dl>	</footer><!-- .entry-meta -->
+
+					</article>
+
+
+					<article id="post-1212" class="post-1212 post type-post status-publish format-standard hentry category-training summary-unabridged">
+
+						<header class="article-header">
+							<hgroup>
+								<h2 class="article-title">
+									<a href="https://web.wsu.edu/2017/05/26/intro-wordpress-may-2017-edition/" rel="bookmark">Intro to WordPress – May 2017 Edition</a>
+								</h2>
+							</hgroup>
+							<hgroup class="source">
+								<time class="article-date" datetime="2017-05-26T23:08:41+00:00">May 26, 2017</time>
+								<cite class="article-author">
+									<a href="https://web.wsu.edu/author/clint-young/" title="Posts by Clint Young" rel="author">Clint Young</a>			</cite>
+							</hgroup>
+
+						</header>
+
+						<div class="article-summary">
+							<p>This will be a general introduction training. Whether you are new to WordPress here at WSU or just need a refresher, everyone is welcome to attend.</p>
+							<p>WHEN: Wednesday, May 31 @ 2:00 pm – 3:30 pm</p>
+							<p><strong>If you are on the Pullman campus</strong> &#8211;<br />
+								<em>please come in person</em></p>
+							<p>WHERE: ITB 2025</p>
+							<hr />
+							<p><strong>If you are not on Pullman campus</strong> &#8211;</p>
+							<p>Please join my meeting from your computer, tablet or smartphone.<br />
+								<a href="https://global.gotomeeting.com/join/761831917">https://global.gotomeeting.com/join/761831917</a></p>
+							<p>You can also dial in using your phone.<br />
+								United States: +1 (669) 224-3412</p>
+							<p>Access Code: 761-831-917</p>
+						</div><!-- .article-summary -->
+
+						<footer class="article-footer">
+							<dl class="categorized"><dt><span class="categorized-default">Categorized</span></dt><dd><a href="https://web.wsu.edu/category/training/">Training</a></dd></dl>	</footer><!-- .entry-meta -->
+
+					</article>
+
+
+					<article id="post-1189" class="post-1189 post type-post status-publish format-standard hentry category-training summary-unabridged">
+
+						<header class="article-header">
+							<hgroup>
+								<h2 class="article-title">
+									<a href="https://web.wsu.edu/2017/04/18/intro-wordpress-april-2017-edition/" rel="bookmark">Intro to WordPress – April 2017 Edition</a>
+								</h2>
+							</hgroup>
+							<hgroup class="source">
+								<time class="article-date" datetime="2017-04-18T17:24:11+00:00">April 18, 2017</time>
+								<cite class="article-author">
+									<a href="https://web.wsu.edu/author/clint-young/" title="Posts by Clint Young" rel="author">Clint Young</a>			</cite>
+							</hgroup>
+
+						</header>
+
+						<div class="article-summary">
+							<p>This will be a general introduction training. Whether you are new to WordPress here at WSU or just need a refresher, everyone is welcome to attend.</p>
+							<p>WHEN: Thursday, April 20 @ 2:30 pm – 4:00 pm</p>
+							<p><strong>If you are on the Pullman campus</strong> &#8211;<br />
+								<em>please come in person</em></p>
+							<p>WHERE: ITB 2025</p>
+							<hr />
+							<p><strong>If you are not on Pullman campus</strong> &#8211;</p>
+							<p>Please join my meeting from your computer, tablet or smartphone.<br />
+								https://global.gotomeeting.com/join/409276749</p>
+							<p>You can also dial in using your phone.<br />
+								United States: +1 (872) 240-3311</p>
+							<p>Access Code: 409-276-749</p>
+						</div><!-- .article-summary -->
+
+						<footer class="article-footer">
+							<dl class="categorized"><dt><span class="categorized-default">Categorized</span></dt><dd><a href="https://web.wsu.edu/category/training/">Training</a></dd></dl>	</footer><!-- .entry-meta -->
+
+					</article>
+
+
+				</div><!--/column-->
+
+				<div class="column two">
+
+					<!-- Begin MailChimp Signup Form -->
+					<link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
+					<div id="mc_embed_signup">
+						<form action="//wsu.us3.list-manage.com/subscribe/post?u=02b3cd67989caec2eec47f036&amp;id=979795f644" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+							<div id="mc_embed_signup_scroll">
+								<label for="mce-EMAIL">Subscribe to new posts</label>
+								<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+								<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+								<div style="position: absolute; left: -5000px;"><input type="text" name="b_02b3cd67989caec2eec47f036_979795f644" tabindex="-1" value=""></div>
+								<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+							</div>
+						</form>
+					</div>
+					<!--End mc_embed_signup-->
+
+				</div><!--/column two-->
+
+			</section>
+			<footer class="main-footer archive-footer">
+				<section class="row side-right pager prevnext gutter">
+					<div class="column one">
+						<span aria-current='page' class='page-numbers current'>1</span>
+						<a class='page-numbers' href='https://web.wsu.edu/page/2/'>2</a>
+						<a class='page-numbers' href='https://web.wsu.edu/page/3/'>3</a>
+						<span class="page-numbers dots">&hellip;</span>
+						<a class='page-numbers' href='https://web.wsu.edu/page/9/'>9</a>
+						<a class="next page-numbers" href="https://web.wsu.edu/page/2/">Next &raquo;</a>			</div>
+					<div class="column two">
+						<!-- intentionally empty -->
+					</div>
+				</section><!--pager-->
+			</footer>
+
+
+		</main>
+
+		<div id="spine" class="spine-column darker search-closed  bleed shelved">
+			<div id="glue" class="spine-glue">
+
+				<header class="spine-header">
+					<a href="https://wsu.edu/" id="wsu-signature">Washington State University</a>
+				</header>
+
+				<section id="wsu-actions" class="spine-actions clearfix">
+
+					<ul id="wsu-actions-tabs" class="spine-actions-tabs spine-tabs clearfix">
+						<li id="wsu-search-tab" class="spine-search-tab closed"><button>Search</button></li>
+						<li id="wsu-contact-tab" class="spine-contact-tab closed"><button>Contact</button></li>
+						<li id="wsu-share-tab" class="spine-share-tab closed"><button>Share</button></li>
+					</ul>
+
+				</section><!--/#wsu-actions-->
+
+				<section id="spine-navigation" class="spine-navigation">
+
+					<nav id="spine-sitenav" class="spine-sitenav">
+						<ul><li id="menu-item-46" class="active"><a href="http://web.wsu.edu">Web Communication</a></li>
+							<li id="menu-item-6"><a href="#">Community</a>
+								<ul class="sub-menu">
+									<li id="menu-item-619"><a href="https://web.wsu.edu/open-lab/">Open Lab</a></li>
+									<li id="menu-item-625"><a href="https://web.wsu.edu/slack-team/">WSU Web on Slack</a></li>
+								</ul>
+							</li>
+							<li id="menu-item-960"><a href="#">Guides</a>
+								<ul class="sub-menu">
+									<li id="menu-item-1218"><a href="https://web.wsu.edu/accessibility-guides/">Accessibility Guides</a>
+										<ul class="sub-menu">
+											<li id="menu-item-950"><a href="https://web.wsu.edu/accessibility-guides/accessibility-checklist/">Accessibility checklist</a></li>
+											<li id="menu-item-951"><a href="https://web.wsu.edu/accessibility-guides/tools/">Tools</a></li>
+											<li id="menu-item-1049"><a href="https://web.wsu.edu/accessibility-guides/keyboard-access/">Keyboard access</a></li>
+											<li id="menu-item-1050"><a href="https://web.wsu.edu/accessibility-guides/images/">Images</a></li>
+											<li id="menu-item-1051"><a href="https://web.wsu.edu/accessibility-guides/color-and-contrast/">Color and contrast</a></li>
+											<li id="menu-item-1053"><a href="https://web.wsu.edu/accessibility-guides/forms/">Forms</a></li>
+											<li id="menu-item-1052"><a href="https://web.wsu.edu/accessibility-guides/flashing/">Flashing</a></li>
+											<li id="menu-item-1048"><a href="https://web.wsu.edu/accessibility-guides/page-titles/">Page titles</a></li>
+											<li id="menu-item-1047"><a href="https://web.wsu.edu/accessibility-guides/headings/">Headings</a></li>
+											<li id="menu-item-1046"><a href="https://web.wsu.edu/accessibility-guides/hidden-content/">Hidden Content</a></li>
+											<li id="menu-item-1045"><a href="https://web.wsu.edu/accessibility-guides/landmarks/">Landmarks</a></li>
+											<li id="menu-item-1044"><a href="https://web.wsu.edu/accessibility-guides/multimedia/">Multimedia</a></li>
+											<li id="menu-item-1054"><a href="https://web.wsu.edu/accessibility-guides/timeouts/">Timeouts</a></li>
+											<li id="menu-item-1043"><a href="https://web.wsu.edu/accessibility-guides/web-text-properties/">Web text properties</a></li>
+											<li id="menu-item-1042"><a href="https://web.wsu.edu/accessibility-guides/tables/">Tables</a></li>
+											<li id="menu-item-1041"><a href="https://web.wsu.edu/accessibility-guides/css-dependence/">CSS dependence</a></li>
+											<li id="menu-item-1040"><a href="https://web.wsu.edu/accessibility-guides/frames/">Frames</a></li>
+											<li id="menu-item-1055"><a href="https://web.wsu.edu/accessibility-guides/links-repetitive-content/">Links and repetitive content</a></li>
+											<li id="menu-item-1039"><a href="https://web.wsu.edu/accessibility-guides/plug-ins/">Browser plug-ins</a></li>
+											<li id="menu-item-1056"><a href="https://web.wsu.edu/accessibility-guides/alternative-versions/">Alternative versions</a></li>
+											<li id="menu-item-1038"><a href="https://web.wsu.edu/accessibility-guides/writing-guide/">Writing guide</a></li>
+										</ul>
+									</li>
+									<li id="menu-item-1245"><a href="#">Server Administration</a>
+										<ul class="sub-menu">
+											<li id="menu-item-954"><a href="https://web.wsu.edu/guides/server-administration/provision-a-wsu-web-server/">Provision a WSU web server</a></li>
+											<li id="menu-item-1244"><a href="https://web.wsu.edu/guides/server-administration/update-an-existing-production-server/">Update an existing production server</a></li>
+											<li id="menu-item-1251"><a href="https://web.wsu.edu/guides/server-administration/existing-linux-server-configurations/">Existing Linux server configurations</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li id="menu-item-949"><a href="https://web.wsu.edu/accessibility/">Web Accessibility</a>
+								<ul class="sub-menu">
+									<li id="menu-item-1346"><a href="https://web.wsu.edu/accessibility/web-accessibility-training-and-support/">Training and Support</a></li>
+								</ul>
+							</li>
+							<li id="menu-item-955"><a href="https://web.wsu.edu/wordpress/">WordPress at WSU</a>
+								<ul class="sub-menu">
+									<li id="menu-item-650"><a href="https://web.wsu.edu/wordpress/build-custom-theme/">Custom Themes</a></li>
+									<li id="menu-item-651"><a href="https://web.wsu.edu/wordpress/build-custom-plugin/">Custom Plugins</a></li>
+									<li id="menu-item-957"><a href="https://web.wsu.edu/wordpress/custom-javascript/">Custom JavaScript</a></li>
+									<li id="menu-item-956"><a href="https://web.wsu.edu/wordpress/code-review/">Code Review</a></li>
+									<li id="menu-item-959"><a href="https://web.wsu.edu/wordpress/plugin-criteria/">Plugin Criteria</a></li>
+									<li id="menu-item-958"><a href="https://web.wsu.edu/wordpress/local-wsuwp-development/">Local WSUWP Development</a></li>
+									<li id="menu-item-683"><a href="#">Plugins</a>
+										<ul class="sub-menu">
+											<li id="menu-item-495"><a href="https://web.wsu.edu/wordpress/plugins/wsuwp-content-syndicate/">WSUWP Content Syndicate</a></li>
+											<li id="menu-item-819"><a href="https://web.wsu.edu/wordpress/plugins/content-visibility/">WSUWP Content Visibility</a></li>
+											<li id="menu-item-305"><a href="#">Events Calendar</a>
+												<ul class="sub-menu">
+													<li id="menu-item-304"><a href="https://web.wsu.edu/events-calendar-syndication/">Syndication</a></li>
+												</ul>
+											</li>
+											<li id="menu-item-158"><a href="https://web.wsu.edu/wordpress/plugins/wsu-mailchimp/">WSU MailChimp</a></li>
+											<li id="menu-item-114"><a href="https://web.wsu.edu/wordpress/plugins/table-of-contents-generator-wordpress-plugin/">Table of Contents Generator</a></li>
+											<li id="menu-item-117"><a href="https://web.wsu.edu/wordpress/plugins/wsu-maps-wordpress-plugin/">WSU Maps Shortcode</a></li>
+											<li id="menu-item-142"><a href="https://web.wsu.edu/wordpress/plugins/public-post-preview/">Public Post Preview</a></li>
+											<li id="menu-item-214"><a href="https://web.wsu.edu/wordpress/plugins/wnpa-documentation/">WNPA Documentation</a></li>
+											<li id="menu-item-535"><a href="https://web.wsu.edu/wordpress/plugins/wsuwp-video-backgrounds/">WSUWP Video Backgrounds</a></li>
+										</ul>
+									</li>
+									<li id="menu-item-684"><a href="#">Themes</a>
+										<ul class="sub-menu">
+											<li id="menu-item-460"><a href="https://web.wsu.edu/wordpress/themes/creating-child-themes/">Creating Child Themes</a></li>
+											<li id="menu-item-108"><a href="https://web.wsu.edu/anatomy-of-a-theme/">Anatomy of a WordPress Theme</a></li>
+										</ul>
+									</li>
+									<li id="menu-item-137"><a href="#">Users</a>
+										<ul class="sub-menu">
+											<li id="menu-item-136"><a href="https://web.wsu.edu/wordpress/users/adding-new-users/">Adding New Users</a></li>
+											<li id="menu-item-853"><a href="https://web.wsu.edu/user-roles/">User Roles</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li id="menu-item-1181"><a href="https://web.wsu.edu/accessibility-complaint/">Report Accessibility Issue</a></li>
+							<li id="menu-item-1223"><a href="https://web.wsu.edu/contact/">Contact</a></li>
+						</ul></nav>
+
+					<nav id="spine-offsitenav" class="spine-offsitenav">
+						<ul><li id="menu-item-617"><a href="https://github.com/washingtonstateuniversity">WSU GitHub</a></li>
+							<li id="menu-item-618"><a href="https://analytics.wsu.edu">WSU Analytics Dashboard</a></li>
+							<li id="menu-item-88"><a href="https://ucomm.wsu.edu">University Communications</a></li>
+						</ul></nav>
+
+				</section>
+
+				<footer class="spine-footer">
+
+					<nav id="wsu-social-channels" class="spine-social-channels">
+						<ul>
+							<li class="facebook-channel"><a href="http://www.facebook.com">facebook</a></li>
+							<li class="twitter-channel"><a href="http://twitter.com/wsupullman">twitter</a></li>
+							<li class="youtube-channel"><a href="http://www.youtube.com/washingtonstateuniv">youtube</a></li>
+							<li class="directory-channel"><a href="http://social.wsu.edu">directory</a></li>
+						</ul>
+					</nav>
+
+					<nav id="wsu-global-links" class="spine-global-links">
+						<ul>
+							<li class="mywsu-link"><a href="https://portal.wsu.edu/">myWSU</a></li>
+							<li class="access-link"><a href="https://access.wsu.edu/">Access</a></li>
+							<li class="policies-link"><a href="https://policies.wsu.edu/">Policies</a></li>
+							<li class="copyright-link"><a href="https://copyright.wsu.edu">&copy;</a></li>
+						</ul>
+					</nav>
+
+				</footer>
+
+			</div><!--/glue-->
+		</div><!--/spine-->
+
+	</div><!--/binder-->
+</div><!--/jacket-->
+
+<div id="contact-details" itemscope itemtype="http://schema.org/Organization">
+	<meta itemprop="name" class="required" content="Washington State University">
+	<meta itemprop="department" class="required" content="">
+	<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+		<meta itemprop="streetAddress" class="optional" content="PO Box 99164">
+		<meta itemprop="addressLocality" class="optional" content="Pullman, WA">
+		<meta itemprop="postalCode" class="required" content="99164">
+	</div>
+	<meta itemprop="telephone" class="required" content="509-335-3564">
+	<meta itemprop="ContactPoint" title="Contact Page..." class="optional" content="http://contact.wsu.edu"></div>
+
+<script type='text/javascript' src='https://web.wsu.edu/wp-content/themes/spine/js/spine-theme.js?ver=0.27.16-1.7.0-42329-p1'></script>
+<script type='text/javascript' src='https://web.wsu.edu/wp-includes/js/wp-embed.min.js?ver=4.9.1'></script>
+
+</body>
+</html>
