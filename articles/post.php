@@ -8,9 +8,9 @@
 				<h1 class="article-title"><?php the_title(); ?></h1>
 			<?php endif; ?>
 		<?php else : ?>
-			<h2 class="article-title">
+			<h1 class="article-title">
 				<a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
-			</h2>
+			</h1>
 		<?php endif; ?>
 		</hgroup>
 		<hgroup class="source">
