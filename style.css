@@ -278,6 +278,26 @@ main ul li {
 	color: #fff;
 }
 
+/* MailChimp Subscribe button */
+.column #mc_embed_signup input.button {
+	background: none;
+	border: 1px solid;
+	border-radius: 4px;
+	color: #ca1237;
+	padding: 0 1.5rem;
+	text-transform: uppercase;
+	transition: all .3s ease;
+	width: auto;
+	line-height: 1;
+	margin-top: 0;
+}
+
+.column #mc_embed_signup input.button:hover {
+	background: #ca1237;
+	border: 1px solid #ca1237;
+	color: #fff;
+}
+
 /* Guides */
 .green {
 	color: #cbc4a2;
