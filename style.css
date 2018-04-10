@@ -70,6 +70,13 @@ main h2 a {
 	border: none;
 }
 
+main h1 a {
+	border-bottom: none;
+	transition: unset;
+	padding-bottom: 0;
+	padding-top: 0;
+}
+
 .column > code {
 	display: block;
 	margin-bottom: 1rem;
@@ -88,7 +95,7 @@ main h2 a {
 }
 
 .post {
-	margin-bottom: 25px;
+	margin-bottom: 5em;
 }
 
 article footer {
@@ -155,6 +162,11 @@ h1 {
 	font-weight: 300;
 	text-transform: uppercase;
 	margin: .5em 0 1.5em;
+}
+
+.not-single .article-header h1 {
+	margin-bottom: .5em;
+	text-transform: none;
 }
 
 .article-header h1 {
