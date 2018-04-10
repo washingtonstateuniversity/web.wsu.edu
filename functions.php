@@ -6,7 +6,7 @@ class WSU_Web_Communication_Theme {
 	 *
 	 * @var string String used for busting cache on scripts.
 	 */
-	public $script_version = '0.0.4';
+	public $script_version = '0.0.5';
 
 	/**
 	 * @since 0.0.1
