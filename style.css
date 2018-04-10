@@ -256,6 +256,15 @@ main ul li {
 	padding: 0 0 .5em;
 }
 
+/* Social icons at the top of posts */
+.social-share-bar {
+	bottom: 1.5em;
+}
+
+.social-share-bar li a {
+	border-bottom: 0;
+}
+
 /* buttons */
 .button,
 .button:hover {
