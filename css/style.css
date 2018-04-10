@@ -82,7 +82,8 @@ main h2 a {
 }
 
 article footer {
-	border: 1px rgba(127, 127, 127, .2) solid;
+	border-top: 1px rgba(127, 127, 127, .2) solid;
+	border-bottom: none;
 	border-right: none;
 	border-left: none;
 	font-size: .75em;
