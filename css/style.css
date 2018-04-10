@@ -365,3 +365,38 @@ code {
 .html-component-embed pre {
 	border: 1px solid #eee;
 }
+
+@media screen and (max-width: 1200px) {
+
+	.social-share-bar {
+		position: relative;
+		margin: 0 0 1em;
+		text-align: left;
+		bottom: 0;
+	}
+
+	.article-header hgroup.source {
+		padding: 0 0 .75em;
+	}
+
+	.article-header h1 {
+		margin-bottom: .25em;
+		font-size: 2.2em;
+	}
+
+	.article-author {
+		display: block;
+	}
+
+	.article-body {
+		padding-top: 1.5em;
+	}
+
+	.single-post h2 {
+		font-size: 1.85em;
+	}
+
+	.single-post h3 {
+		font-size: 1.3em;
+	}
+}
